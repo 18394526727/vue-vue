@@ -19,6 +19,11 @@ export default new Router({
       path: "/overturn",
       name: "overturn",
       component: () => import("@/views/Overturn.vue")
+    },
+    {
+      path: "/drag",
+      name: "drag",
+      component: () => import("@/views/Drag/Drag.vue")
     }
   ]
 });

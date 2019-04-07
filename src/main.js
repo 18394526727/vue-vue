@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router/router";
 import store from "./store/index";
 import "@/components/_global.js";
+import "@/views/Drag/drag";
 
 Vue.config.productionTip = false;
 
