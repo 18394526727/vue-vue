@@ -4,7 +4,7 @@ import router from "./router/router";
 import store from "./store/index";
 import "@/components/_global.js";
 import "@/views/Drag/drag";
-
+import "@/utils/index";
 Vue.config.productionTip = false;
 
 new Vue({

@@ -30,3 +30,10 @@ button {
     border: none;
     outline: none;
 }
+.icon{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
