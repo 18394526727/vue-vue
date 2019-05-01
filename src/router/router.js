@@ -29,6 +29,11 @@ export default new Router({
       path: "/drag",
       name: "drag",
       component: () => import("@/views/Drag/Drag.vue")
+    },
+    {
+      path: "/animation",
+      name: "animation",
+      component: () => import("@/views/Animation.vue")
     }
   ]
 });

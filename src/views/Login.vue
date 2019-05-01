@@ -2,12 +2,12 @@
   <div class="login-root">
     <div class="input-box">
       <div class="content">
-        <el-form label-width="40px" class="login-box">
-          <el-form-item label="账号">
-            <el-input v-model="loginForm.accounts"></el-input>
+        <el-form label-width="45px" class="login-box">
+          <el-form-item label="账号:">
+            <el-input maxlength="11" v-model="loginForm.accounts"></el-input>
           </el-form-item>
-          <el-form-item label="密码">
-            <el-input v-model="loginForm.accounts"></el-input>
+          <el-form-item label="密码:">
+            <el-input v-model="loginForm.password"></el-input>
           </el-form-item>
         </el-form>
       </div>
@@ -26,6 +26,17 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+.el-form-item__label {
+  color: #a2c7c1;
+}
+.el-input__inner {
+  background: transparent;
+  border: 1px solid #4fca7a;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+</style>
 <style lang="scss" scoped>
 @mixin center {
   display: flex;
@@ -53,11 +64,7 @@ export default {
       box-sizing: border-box;
       padding: 20px;
       .el-form {
-        border: 2px solid #ffffff;
         .el-form-item {
-          // /deep/ .el-form-item__label{
-          //   color: whitesmoke;
-          // }
         }
       }
     }

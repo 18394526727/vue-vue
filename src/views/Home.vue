@@ -35,7 +35,8 @@ export default {
       routers: [
         { url: "/about", name: "CSS" },
         { url: "/drag", name: "DRAG" },
-        { url: "/login", name: "登录窗口一" }
+        { url: "/login", name: "登录窗口一" },
+        { url: "/animation", name: "ANIMATION" }
       ]
     };
   },
