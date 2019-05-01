@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev": "cross-env NODE_ENV=develop vue-cli-service serve",
+		"pro": "cross-env NODE_ENV=production vue-cli-service serve",
+    "build-pro": "cross-env NODE_ENV=production vue-cli-service build",
+		"build-dev": "cross-env NODE_ENV=develop vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -22,6 +24,7 @@
     "@vue/cli-service": "^3.5.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "fibers": "^3.1.1",

@@ -8,6 +8,10 @@
         <svg class="icon car" aria-hidden="true">
           <use xlink:href="#icon-Bulldozer"></use>
         </svg>
+        <i class="fas fa-arrow-circle-left"></i>
+        <i class="fab fa-alipay"></i>
+        <i class="fas fa-camera-retro"></i>
+        <i class="fas fa-id-card"></i>
       </div>
       <ul class="ul">
         <router-link
@@ -24,13 +28,15 @@
 </template>
 
 <script>
-// import Vue from "vue";
-
 export default {
   name: "home",
   data() {
     return {
-      routers: [{ url: "/about", name: "CSS" }, { url: "/drag", name: "DRAG" }]
+      routers: [
+        { url: "/about", name: "CSS" },
+        { url: "/drag", name: "DRAG" },
+        { url: "/login", name: "登录窗口一" }
+      ]
     };
   },
   mounted() {
@@ -55,7 +61,7 @@ export default {
       box-sizing: border-box;
       padding: 5px 10px;
       color: white;
-      background: rgb(145, 143, 238);
+      background: #99ccff;
       .li {
         background: rgb(147, 195, 223);
         border-radius: 3px;
@@ -65,9 +71,10 @@ export default {
         transition: all 0.8s;
         cursor: pointer;
         &:hover {
-          background: #ffffff;
+          background: linear-gradient(random(100) + deg, #990066, #9900ff);
           color: white;
           text-shadow: 1px 1px 3px #000;
+          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
         }
       }
     }
