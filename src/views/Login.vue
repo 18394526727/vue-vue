@@ -2,16 +2,29 @@
   <div class="login-root">
     <div class="input-box">
       <div class="content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, omnis amet
-        tempore exercitationem laborum explicabo, harum repellendus repudiandae
-        sed, corrupti quod autem dignissimos vel necessitatibus adipisci maxime
-        numquam praesentium temporibus!
+        <el-form label-width="40px" class="login-box">
+          <el-form-item label="账号">
+            <el-input v-model="loginForm.accounts"></el-input>
+          </el-form-item>
+          <el-form-item label="密码">
+            <el-input v-model="loginForm.accounts"></el-input>
+          </el-form-item>
+        </el-form>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      loginForm: {
+        acoounts: "",
+        password: ""
+      }
+    };
+  }
+};
 </script>
 <style lang="scss" scoped>
 @mixin center {
@@ -39,6 +52,14 @@ export default {};
       z-index: 2;
       box-sizing: border-box;
       padding: 20px;
+      .el-form {
+        border: 2px solid #ffffff;
+        .el-form-item {
+          // /deep/ .el-form-item__label{
+          //   color: whitesmoke;
+          // }
+        }
+      }
     }
     @mixin content($index, $bg) {
       content: "";
@@ -59,9 +80,6 @@ export default {};
       @include content(-2, #ffffff);
       filter: blur(50px);
       background: linear-gradient(235deg, #ff0000, #062021, #00ff00);
-    }
-    &::before,
-    &::after {
     }
   }
 }

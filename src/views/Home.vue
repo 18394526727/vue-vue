@@ -40,7 +40,10 @@ export default {
     };
   },
   mounted() {
-    console.log(this.$Math_);
+    console.log(this.$http);
+    this.$http.get("").then(res => {
+      console.log(res);
+    });
   }
 };
 </script>

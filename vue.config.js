@@ -1,4 +1,3 @@
-console.log(process.env);
 const developConfig = {
   name: "'develop'",
   baseUrl: "'www.develop.com'"
