@@ -8,6 +8,7 @@
           </el-form-item>
           <el-form-item label="密码:">
             <el-input v-model="loginForm.password"></el-input>
+            <number-input v-model="aaa"></number-input>
           </el-form-item>
         </el-form>
       </div>
@@ -21,7 +22,8 @@ export default {
       loginForm: {
         acoounts: "",
         password: ""
-      }
+      },
+      aaa: ""
     };
   }
 };
