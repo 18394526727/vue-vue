@@ -34,6 +34,11 @@ export default new Router({
       path: "/animation",
       name: "animation",
       component: () => import("@/views/Animation.vue")
+    },
+    {
+      path: "/my-love",
+      name: "myLove",
+      component: () => import("@/views/MyLove.vue")
     }
   ]
 });
